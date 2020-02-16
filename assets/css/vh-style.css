@@ -1,0 +1,6 @@
+:root {
+  /* copy and paste all colors */
+  --color--blue700: #2367a5;
+  --color--blue800: #2367a5;
+  --VhButton--secondary-color: var(--color--blue800);
+}

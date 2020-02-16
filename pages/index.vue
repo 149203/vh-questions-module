@@ -9,6 +9,17 @@
         <b-button variant="info">2016 Mazda CX-3</b-button>
         <b-button variant="info">2017 Mazda CX-3</b-button>
         <b-button variant="info">Safety</b-button>
+
+        <vh-button variation="secondary">
+          Test
+        </vh-button>
+
+        <VhChip>
+          <VhIcon name="checkCircle" color="darkBlue" slot="icon-left" />
+
+          2018 Mazda CX-3
+        </VhChip>
+
         <!-- <button
           type="button"
           data-gtm-trigger="click"
@@ -49,9 +60,14 @@
 
 <script>
 import Vote from '~/components/Vote.vue'
+import { VhButton, VhChip, VhIcon } from '@vehiclehistory/ui/dist/sfc'
+
 export default {
   components: {
-    Vote
+    Vote,
+    VhButton,
+    VhChip,
+    VhIcon
   }
 }
 </script>

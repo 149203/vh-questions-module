@@ -23,17 +23,18 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['assets/css/vh-style.css'],
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+
+  plugins: ['plugins/vuetify'], // VhUI needs this
   /*
    ** Nuxt.js dev-modules
    */
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module'
+    // '@nuxtjs/eslint-module'
   ],
   /*
    ** Nuxt.js modules
@@ -58,6 +59,7 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
+    transpile: [/^@vehiclehistory|^vuetify|^vue-swiper-js|^@material/]
   }
 }
