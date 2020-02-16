@@ -1,69 +1,41 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        vh-questions-module
-      </h1>
-      <h2 class="subtitle">
-        Display and create user-submitted questions and answers for Vehicle
-        History.
-      </h2>
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
+  <b-container>
+    <b-row>
+      <b-col cols="8" offset="2">
+        <h1>Mazda CX-3 Questions</h1>
+        <b-button variant="link" class="p-0">Ask a question</b-button>
+      </b-col>
+      <b-col cols="8" offset="2">
+        <b-button variant="info">2016 Mazda CX-3</b-button>
+        <b-button variant="info">2017 Mazda CX-3</b-button>
+        <b-button variant="info">Safety</b-button>
+        <!-- <button
+          type="button"
+          data-gtm-trigger="click"
+          data-gtm-value="[consumer-reviews] Comfort Subject Filter Chip"
+          class="VhChip ConsumerReviewKeywords-keywordChip VhChip--hover VhChip--medium"
+          data-v-becde372=""
         >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+          <span class="VhChip-iconLeft"></span>
+          <span class="VhChip-content">
+            2018 Mazda CX-3
+          </span>
+        </button> -->
+      </b-col>
+      <b-col cols="8" offset="2">
+        <h2>I'm looking at the 2016 model, does it have a backup camera?</h2>
+        <b-badge variant="info">2016 Mazda CX-3</b-badge>
+        <b-badge variant="info">Safety</b-badge>
+        <p>
+          Great gas mileage, safety features such as back-up camera and blind
+          spot detectors on side mirrors, CX-3 model is a bit small - back seat
+          passengers do not have a lot of space for their legs or anything else
+          that might be transported in the back, radio system started having
+          trouble connecting to Bluetooth on my phone after about a year.
+        </p>
+      </b-col>
+    </b-row>
+  </b-container>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>
+<script></script>
