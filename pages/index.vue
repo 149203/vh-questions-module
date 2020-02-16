@@ -3,7 +3,7 @@
     <b-row>
       <b-col cols="8" offset="2">
         <h1>Mazda CX-3 Questions</h1>
-        <b-button variant="link" class="p-0">Ask a question</b-button>
+        <b-button variant="link info" class="p-0">Ask a question</b-button>
       </b-col>
       <b-col cols="8" offset="2">
         <b-button variant="info">2016 Mazda CX-3</b-button>
@@ -26,16 +26,32 @@
         <h2>I'm looking at the 2016 model, does it have a backup camera?</h2>
         <b-badge variant="info">2016 Mazda CX-3</b-badge>
         <b-badge variant="info">Safety</b-badge>
-        <p>
-          Great gas mileage, safety features such as back-up camera and blind
-          spot detectors on side mirrors, CX-3 model is a bit small - back seat
-          passengers do not have a lot of space for their legs or anything else
-          that might be transported in the back, radio system started having
-          trouble connecting to Bluetooth on my phone after about a year.
-        </p>
+        <b-col cols="2">
+          <Vote />
+        </b-col>
+        <b-col cols="10">
+          <p>
+            Great gas mileage, safety features such as back-up camera and blind
+            spot detectors on side mirrors, CX-3 model is a bit small - back
+            seat passengers do not have a lot of space for their legs or
+            anything else that might be transported in the back, radio system
+            started having trouble connecting to Bluetooth on my phone after
+            about a year.
+          </p>
+        </b-col>
+      </b-col>
+      <b-col cols="8" offset="2">
+        <b-button variant="primary">Submit your question</b-button>
       </b-col>
     </b-row>
   </b-container>
 </template>
 
-<script></script>
+<script>
+import Vote from '~/components/Vote.vue'
+export default {
+  components: {
+    Vote
+  }
+}
+</script>
