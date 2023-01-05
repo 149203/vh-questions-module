@@ -17,7 +17,7 @@
     "@vehiclehistory/ui": "^0.2.34",
     "bootstrap": "^4.1.3",
     "bootstrap-vue": "^2.0.0",
-    "nuxt": "^2.0.0",
+    "nuxt": "^2.15.8",
     "stylus": "^0.54.7",
     "stylus-loader": "^3.0.2",
     "vue-swiper-js": "0.0.16",
